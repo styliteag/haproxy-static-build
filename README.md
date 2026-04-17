@@ -72,7 +72,7 @@ The build turns on OpenSSL, PCRE2 (static, with JIT), zlib, threading, and Prome
 
 ## Author & AI Usage
 
-This project was primarily written by a human.
+This project was written by a human with the help of AI tools.
 
 AI tools (e.g. ChatGPT) were used as assistance for:
 - brainstorming
