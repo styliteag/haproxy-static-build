@@ -4,19 +4,20 @@ Build a **fully static** HAProxy binary for Linux (musl) using Alpine in Docker.
 
 ## Download prebuilt binary
 
-Prebuilt static binaries are committed under `dist/` and can be fetched directly from GitHub. `haproxy-latest` is a symlink to the current version (`haproxy-3.3.6`).
+Prebuilt static binaries are committed under `dist/`. `haproxy-latest` always points at the current version (currently **3.3.6**); pin to a specific version if you prefer reproducible fetches.
 
 ```sh
-# linux/amd64
+# linux/amd64 — latest
 wget -O haproxy https://github.com/styliteag/haproxy-static-build/raw/main/dist/linux_amd64/haproxy-latest
 chmod +x haproxy
 
-# linux/arm64
+# linux/arm64 — latest
 wget -O haproxy https://github.com/styliteag/haproxy-static-build/raw/main/dist/linux_arm64/haproxy-latest
 chmod +x haproxy
-```
 
-Pin to a specific version by replacing `haproxy-latest` with `haproxy-3.3.6` (or any tagged version in `dist/`).
+# pin to a specific version
+wget -O haproxy https://github.com/styliteag/haproxy-static-build/raw/main/dist/linux_amd64/haproxy-3.3.6
+```
 
 ## Requirements
 
