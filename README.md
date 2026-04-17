@@ -69,3 +69,14 @@ docker buildx build --build-arg HAPROXY_VERSION=3.3.7 ...
 ## Features enabled
 
 The build turns on OpenSSL, PCRE2 (static, with JIT), zlib, threading, and Prometheus exporter (`USE_PROMEX=1`). Adjust `Makefile` variables in the Dockerfile if you need a different feature set.
+
+## Author & AI Usage
+
+This project was primarily written by a human.
+
+AI tools (e.g. ChatGPT) were used as assistance for:
+- brainstorming
+- code suggestions
+- debugging
+
+All code was reviewed, adapted, and validated by the author.
