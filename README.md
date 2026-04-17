@@ -80,3 +80,7 @@ AI tools (e.g. ChatGPT) were used as assistance for:
 - debugging
 
 All code was reviewed, adapted, and validated by the author.
+
+## License
+
+Released under the [MIT License](LICENSE).
