@@ -2,6 +2,22 @@
 
 Build a **fully static** HAProxy binary for Linux (musl) using Alpine in Docker. Dependencies (zlib, PCRE2, OpenSSL) are built from source and linked statically; the result is suitable for minimal or `FROM scratch`–style images.
 
+## Download prebuilt binary
+
+Prebuilt static binaries are committed under `dist/` and can be fetched directly from GitHub. `haproxy-latest` is a symlink to the current version (`haproxy-3.3.6`).
+
+```sh
+# linux/amd64
+wget -O haproxy https://github.com/styliteag/haproxy-static-build/raw/main/dist/linux_amd64/haproxy-latest
+chmod +x haproxy
+
+# linux/arm64
+wget -O haproxy https://github.com/styliteag/haproxy-static-build/raw/main/dist/linux_arm64/haproxy-latest
+chmod +x haproxy
+```
+
+Pin to a specific version by replacing `haproxy-latest` with `haproxy-3.3.6` (or any tagged version in `dist/`).
+
 ## Requirements
 
 - Docker with [Buildx](https://docs.docker.com/build/buildx/) and BuildKit enabled
